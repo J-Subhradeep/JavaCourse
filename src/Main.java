@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -6,12 +8,12 @@ public class Main {
                 System.out.print(" ");
             }
             for (int j = 0; j < i; j++) {
-
                 System.out.print("* " );
             }
             System.out.println();
         }
         System.out.println("Square of 2: "+ new Functions().square(4));
-        System.out.println("GCD of 8 and 12 :" + new GCD().calculate(24, 36));
+        GCD gcd = new GCD();
+        System.out.println("GCD of 8 and 12 :" + gcd.calculate(48, 42));
     }
 }
